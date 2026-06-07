@@ -12,7 +12,7 @@
     "title": "Ollie",
     "description": "",
     "dueDate": "2026-06-01",
-    "completed": true,
+    "completed": false,
     "createdAt": 1780859613708
   }
 ]
