@@ -35,6 +35,16 @@ https://github.com/tanish1120/task-manager
 
 * **JSON File Persistence** – Tasks are stored in a local JSON file (`data/tasks.json`) and persist across local server restarts.
 
+### Deployment Note
+
+Task persistence is implemented using a local JSON file (`data/tasks.json`).
+
+The application fully supports persistence in a local development environment, where tasks are stored and retained across server restarts.
+
+When deployed on Vercel, file-system writes are ephemeral due to the serverless execution environment. As a result, newly created or updated tasks may not persist between deployments or function invocations.
+
+For a production-ready deployment, I would replace JSON file storage with a persistent database solution such as SQLite, PostgreSQL, or MongoDB.
+
 ---
 
 ## Features
